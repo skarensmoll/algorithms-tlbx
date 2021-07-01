@@ -1,6 +1,10 @@
 # Uses python3
 import sys
 
+
+
+
+
 def get_majority_element(a, left, right):
     if left == right:
         return -1
