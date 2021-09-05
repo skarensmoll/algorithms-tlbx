@@ -29,6 +29,15 @@ function findAdjacencies(node) {
   return adjacencies;
 }
 
+function areConnected(node1, node2) {
+  const row = vertices.indexOf(node2);
+  const col = vertices.indexOf(node1);
+
+  return adjacentMatrix[row][col] === 1;
+}
 
 console.log(findAdjacencies(1));
 console.log(findAdjacencies(2));
+
+console.log(areConnected(2, 8)); //true
+console.log(areConnected(2, 1)); //false
